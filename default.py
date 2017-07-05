@@ -158,7 +158,7 @@ def ShowSeries(url):
 		#xbmc.log('*** %s Descr   = %s' % (sindex, Descr))
 		#xbmc.log('*** %s wurl   = %s' %  (sindex, wurl))
 
-		Title = '%s. %s (%s)' % (sindex, TitleRU, TitleEN)
+		Title = '%s. %s' % (sindex, TitleEN)
 
 		listitem = xbmcgui.ListItem(Title, iconImage = Thumb, thumbnailImage = Thumb)
 		listitem.setInfo(type = "Video",
@@ -240,7 +240,7 @@ def OpenSeries(url, title):
 		xbmc.log('*** %s EpiNUM  = %s' % (sindex, EpiNUM))
 		xbmc.log('*** %s wurl    = %s' % (sindex, wurl))
 
-		Title = 'Episode %s: %s / %s' % (EpiNUM, TitleRU, TitleEN)
+		Title = 'Episode %s: %s' % (EpiNUM, TitleEN)
 		Descr = 'Season: %s\nEpisode: %s' % (SeaNUM, EpiNUM)
 
 		listitem = xbmcgui.ListItem(Title, iconImage = Thumb, thumbnailImage = Thumb)
@@ -470,14 +470,14 @@ def Watch(url, title, img):
 
 	Hash = Hash[::-1]
 
-	Lang = 'ru'
+	Lang = 'en'
 	Time = '0'
 	#p0 = 'http://cdn.turbik.tv'
 	#p0 = 'http://217.199.218.60'
 
 	p1 = hashlib.sha1(Lang).hexdigest()
 	p2 = str(eid)
-	p3 = str(sources2_default)
+	p3 = str(sources2_hq)
 	p4 = str(Time)
 	p5 = Hash
 	p6 = hashlib.sha1(Hash + str(random.random())).hexdigest()

@@ -7,8 +7,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Смотрите сериалы с сайта https://turbik.tv</summary>
-		<description>Смотрите сериалы с сайта https://turbik.tv</description>
+		<summary>https://turbik.tv 0.0.1</summary>
+		<description>https://turbik.tv 0.0.1</description>
 		<platform>all</platform>
 	</extension>
 </addon>
